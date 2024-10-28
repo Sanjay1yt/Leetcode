@@ -15,3 +15,8 @@ Array
     now check the value with map whether resulted value is presented, if not set the current value with index in the map.
     if its present get the index for the value which we stored in map and also take our current iteration index, then break
     the loop and return the value 
+
+3.check number is palindrome 
+   step 1 - we we module any number with ten we get remaining value ( definitely it will be last number).
+   step 2 - initial a variable (ex-sum) and value is 0, now we need to arrange our reversed number one by one.(here if we multiple our variable sum with 10 and add out module value ,  and store the updated value)
+   step 3 - we need to remove the last value from our original user input value (so divide the original value with 10 and remove the pointed value)
