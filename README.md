@@ -24,3 +24,7 @@ Array
 4.best time to buy and sell stocks
     ---sliding window method(same as two pointer)
     here first we declare a maxProfit as - 0 and 1st value as our first buy price. now we check that if current price is less than buy price is yes(we change the buy price value), and also we check that max for our maxProfit and (current price - buy price).if the value is greater than out maxProfit we change the value for maxProfit
+
+5.contains duplicate
+    ---using new set()
+    we need to check, if array values are duplicate. we declared a empty set and for every iteration we are checking if the current values has in set, if yes(just stop the loop and return true), else add current value in set
