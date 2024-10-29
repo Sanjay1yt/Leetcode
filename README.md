@@ -28,3 +28,8 @@ Array
 5.contains duplicate
     ---using new set()
     we need to check, if array values are duplicate. we declared a empty set and for every iteration we are checking if the current values has in set, if yes(just stop the loop and return true), else add current value in set
+
+6.maximum subArray
+    ---here we use a method like sliding window.
+    1st if array is empty just return zero,else it contains one element just return them as 1st value.
+    now our main concept - initially we are maintaining a largestSum as array 1st value and consider a totalSubArrayAs 0...in every loop we add totalSubArrayAs + currentIndex value and check the which is maximum value(because [-2,1,-3,4,-1,2,1,-5,4] in this array the sub array is [4,-1,2,1] ans answer is 6. here after -2 the value is 1,so now totalSubArrayAs 1, before that value is in minus(-),so what ever the value if its minus remove them and consider the current positive value as starting sub array and calculate from that). and check the maximum of totalSubArrayAs and totalSubArrayAs (because may be the older sub array may have the maximum value)
