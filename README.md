@@ -33,3 +33,6 @@ Array
     ---here we use a method like sliding window.
     1st if array is empty just return zero,else it contains one element just return them as 1st value.
     now our main concept - initially we are maintaining a largestSum as array 1st value and consider a totalSubArrayAs 0...in every loop we add totalSubArrayAs + currentIndex value and check the which is maximum value(because [-2,1,-3,4,-1,2,1,-5,4] in this array the sub array is [4,-1,2,1] ans answer is 6. here after -2 the value is 1,so now totalSubArrayAs 1, before that value is in minus(-),so what ever the value if its minus remove them and consider the current positive value as starting sub array and calculate from that). and check the maximum of totalSubArrayAs and totalSubArrayAs (because may be the older sub array may have the maximum value)
+
+7.two sum 2
+    ---here we used two pointer method, advantage we have sorted array here , so validate left and right value. if sum value is greater than target value reduce right pointer else if value is lesser than target value increase the left pointer. if its equal to targeted value then return the left +1 and right index+1. because in the question 1st value index is 2 and last is length of array.
