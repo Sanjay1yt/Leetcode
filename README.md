@@ -36,3 +36,8 @@ Array
 
 7.two sum 2
     ---here we used two pointer method, advantage we have sorted array here , so validate left and right value. if sum value is greater than target value reduce right pointer else if value is lesser than target value increase the left pointer. if its equal to targeted value then return the left +1 and right index+1. because in the question 1st value index is 2 and last is length of array.
+
+8.product of array except self
+    --- here we used left and right approach we iterate through from left to right and take a product, same reverse loop from right to lef we iterate and take a product.
+    first we initialize a array with same input size -- declare a left product array and iterate except current value we should take the before all product value and store in current index, same as vice versa for right to left iteration.
+    so, now we have left product array and right product array . in 3rd loop wee need to multiple current index of left product value and right product value and store in result array - and that is our output
