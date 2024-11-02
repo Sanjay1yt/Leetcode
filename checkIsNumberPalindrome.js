@@ -1,5 +1,5 @@
 /*as a normal palindrome method we can convert a number into string 
-and use two pointer method(left and right).but we implemented without using anu inbuilt method */
+and use two pointer method(left and right).but we implemented without using anyS inbuilt method */
 
 const checkIsNumberPalindrome = (number) => {
   let userInput = number;
