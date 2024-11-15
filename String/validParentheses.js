@@ -7,18 +7,16 @@ var isValid = function (value) {
     ["{", "}"],
     ["[", "]"],
   ]);
-  let currentIndex = 0;
   const openBrackets = [];
-  while (currentIndex < value.length) {
-    if (matchedParentheses.has(value[currentIndex])) {
-      openBrackets.push(value[currentIndex]);
+  for (valueElement of value) {
+    if (matchedParentheses.has(valueElement)) {
+      openBrackets.push(valueElement);
     } else if (
       !openBrackets.length ||
-      matchedParentheses.get(openBrackets.pop()) !== value[currentIndex]
+      matchedParentheses.get(openBrackets.pop()) !== valueElement
     ) {
       return false;
     }
-    currentIndex++;
   }
   return !openBrackets.length;
 };
