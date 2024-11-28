@@ -36,6 +36,9 @@
     ---sliding window method(same as two pointer)
     here first we declare a maxProfit as - 0 and 1st value as our first buy price. now we check that if current price is less than buy price is yes(we change the buy price value), and also we check that max for our maxProfit and (current price - buy price).if the value is greater than out maxProfit we change the value for maxProfit
 
+125.validPalindrome
+    first in sting we need to convert them into lower case and also remove the non alpha numeric values. next your loop should run in length o string/2 take current first value and last value as initially and check if both are same , if yes move to next in two pointer method else return false
+
 153.maximum product of sub array
     ---in this problem we need to handle , (0 and also keep track of minimum and maximum because multiplying a negative with negative gives a positive value).initially we assigned a currentMin, and currentMax as 1 and maximumSubArray max value of user input(because if the array contains one value and we need to return that as maximumSubArray).first we handle the 0 part. if current iterating value is 0 just reset our currentMin and currentMax as 1 and ignore the loop.next we are keep a temp variable and store the currentMax value and change our currentMax value by comparing Math.max(current iterating value, current iterating * temp ,current iterating * currentMin)  same all three comparison for currentMin also using Math.min. and for maximum sub array we getting a Math.max by comparing(maximumSubArray,currentMax). why we are using a temp to store currentMax because if we directly store in currentMax and in next step we comparing a currentMin - in that step it will affect
 
