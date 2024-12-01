@@ -65,7 +65,7 @@
 242.valid Anagram
     ---here we used Hash map method to solve this problem.first we construct a hash for valid string (1st parameter) like unique words and how many times its repeated count.second we iterate a un arranged string word(anagram,2nd parameter) . and for every same word we use to reduce the count in the hash map.
 
-
-
+647.palindromic substring
+    --- here we used same method which we used in longest palindromic substring.here initially we take total length as user input length because individually every letter is substring. then we iterate through the element condition-1 we check current value and next value is same if yes we pass to out palindromicSubstring function then condition-2, we check previous value and next value is same if yes we pass ot out palindromicSubstring function, and this palindromicSubstring returns a count of the substring, here we used two pointer method to check last and first value if yes we move to next substring and also we keep track of the substring count then after returning we add the value to existing totalLength
 
 
