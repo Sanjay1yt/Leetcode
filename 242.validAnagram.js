@@ -20,3 +20,4 @@ var isAnagram = function (s, t) {
   return true;
 };
 console.log(isAnagram("ab", "a"));
+// we can also sort both the input and check whether its equal - but i takes more time complexity
